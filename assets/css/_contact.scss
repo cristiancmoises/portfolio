@@ -1,0 +1,124 @@
+.contact {
+
+    .row {
+        display    : flex;
+        align-items: center;
+        flex-wrap  : wrap;
+        gap        : 4rem;
+
+        .info-container {
+            // width: 35rem;
+            flex: 1 1 42rem;
+
+            h1 {
+                @include fontStyle(3rem, var(--white));
+                font-weight   : normal;
+                padding-bottom: 1rem;
+            }
+
+            p {
+                @include fontStyle(1.5rem, var(--white));
+                padding    : 1rem 0;
+                line-height: 2;
+            }
+
+            .box-container {
+                padding: 2rem 0;
+
+                .box {
+                    display: flex;
+                    gap    : 2rem;
+                    padding: 1rem 0;
+
+                    i {
+                        @include fontStyle(3rem, var(--theme));
+                        padding-top: 0.5rem;
+                    }
+
+                    .info {
+                        h3 {
+                            @include fontStyle(2rem, var(--white));
+                            font-weight: normal;
+                        }
+
+                        p {
+                            @include fontStyle(1.6rem, var(--white));
+                            padding: .5rem 0;
+                        }
+
+                        .email {
+                            text-transform: lowercase;
+                        }
+                    }
+                }
+            }
+
+            .share {
+
+                a {
+                    @include fontStyle(2rem, var(--white));
+                    height          : 4.5rem;
+                    width           : 4.5rem;
+                    line-height     : 4.5rem;
+                    margin-right    : 1.5rem;
+                    text-align      : center;
+                    border-radius   : 50%;
+                    background-color: var(--lightBg);
+                    cursor          : pointer;
+
+                    &:hover {
+                        color: var(--theme);
+                    }
+
+                }
+            }
+        }
+
+        form {
+            flex          : 1 1 42rem;
+            display       : flex;
+            flex-direction: column;
+
+            .inputBox {
+                display        : flex;
+                flex-wrap      : wrap;
+                justify-content: space-between;
+
+                input {
+                    width: 49%;
+
+                    &::placeholder {
+                        // color: var(--white)
+                    }
+                }
+            }
+
+            .inputBox input,
+            textarea {
+                @include fontStyle(1.6rem, var(--white));
+                border-radius   : .5rem;
+                padding         : 1.2rem 1.8rem;
+                margin          : 0.7rem 0;
+                text-transform  : none;
+                background-color: var(--lightBg);
+
+            }
+
+            textarea {
+                width : 100%;
+                resize: none;
+                height: 25rem;
+            }
+
+            .btn {
+                padding   : 1rem 3rem;
+                align-self: start;
+
+                &:hover {
+                    background-color: var(--white);
+                    color           : var(--black);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.header {
+    .navbar {
+        position   : fixed;
+        bottom     : 0;
+        left       : 0;
+        right      : 0;
+        z-index    : 1000;
+        display    : flex;
+        align-items: flex-end;
+
+        a {
+            flex      : 1;
+            padding   : 2rem;
+            text-align: center;
+            background: var(--lightBg);
+            transition: padding 0.2s linear;
+            @include fontStyle(2rem, var(--white));
+
+
+            &:hover {
+                background    : var(--theme);
+                padding-bottom: 3.5rem;
+
+                i {
+                    color: var(--white);
+                }
+            }
+
+            i {
+                color        : var(--theme);
+                padding-right: 0.8rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.home {
+    min-height : calc(100vh - 6.5rem);
+    display    : flex;
+    align-items: center;
+    flex-wrap  : wrap;
+    gap        : 4rem;
+
+    .image {
+        flex      : 1 1 42rem;
+        text-align: center;
+
+        img {
+            height       : 50rem;
+            width        : 50rem;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+    }
+
+    .content {
+        flex: 1 1 42rem;
+
+
+        h3 {
+            @include fontStyle(4rem, var(--white));
+            font-weight   : 500;
+            padding-bottom: .5rem;
+        }
+
+
+        h1 {
+            @include fontStyle(8rem, var(--theme));
+            padding    : .5rem 0;
+            font-weight: 500;
+        }
+
+        p {
+            @include fontStyle(1.8rem, var(--lightColor));
+            padding    : .5rem 0 1rem;
+            line-height: 1.8;
+        }
+    }
+}

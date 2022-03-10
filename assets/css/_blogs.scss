@@ -1,0 +1,82 @@
+.blogs {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    .box-container {
+        margin-bottom: 2rem;
+
+        @include grid(31rem);
+
+        .box {
+            padding         : 2rem;
+            text-align      : center;
+            border-radius   : .5rem;
+            background-color: var(--lightBg);
+            box-shadow      : var(--boxShadow);
+            display         : none;
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                display: inline-block;
+            }
+
+            &:hover .image img {
+                transform: scale(1.2);
+            }
+
+            .image {
+                height       : 25rem;
+                width        : 100%;
+                border-radius: .5rem;
+                overflow     : hidden;
+
+                img {
+                    height    : 100%;
+                    width     : 100%;
+                    object-fit: cover;
+                    transition: .2s linear;
+                }
+            }
+
+            .content {
+
+                .icons {
+                    position        : relative;
+                    top             : -2rem;
+                    border-radius   : .5rem;
+                    padding         : 1.5rem;
+                    display         : inline-block;
+                    background-color: var(--black);
+
+                    a {
+                        @include fontStyle(1.5rem, var(--white));
+                        margin: 0 1rem;
+
+                        &:hover {
+                            color: var(--theme);
+                        }
+
+                        i {
+                            padding-right: .5rem;
+                            color        : var(--theme);
+
+                        }
+                    }
+                }
+            }
+
+            h3 {
+                @include fontStyle(2rem, var(--white));
+                font-weight: normal;
+            }
+
+            p {
+                @include fontStyle(1.5rem, var(--white));
+                padding    : 1rem 0;
+                line-height: 2;
+
+            }
+        }
+    }
+}

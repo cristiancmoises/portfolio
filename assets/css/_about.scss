@@ -1,0 +1,71 @@
+.about {
+    margin-bottom: 15rem;
+
+    .row {
+        display    : flex;
+        align-items: center;
+        flex-wrap  : wrap;
+        gap        : 2rem;
+
+        .info-container {
+            flex: 1 1 42rem;
+
+            h1 {
+                @include fontStyle(3rem, var(--white));
+                font-weight   : 500;
+                text-transform: uppercase;
+                padding-bottom: 1rem;
+            }
+
+            .box-container {
+                padding  : 1rem 0;
+                display  : flex;
+                flex-wrap: wrap;
+                gap      : 2rem;
+
+                .box {
+                    flex: 1 1 20rem;
+
+                    h3 {
+                        @include fontStyle(2rem, var(--white));
+                        padding    : 1rem 0;
+                        font-weight: normal;
+
+                        span {
+                            color: var(--theme);
+                        }
+                    }
+
+                    .email {
+                        text-transform: lowercase;
+                    }
+                }
+            }
+        }
+
+        .count-container {
+            flex     : 1 1 42rem;
+            display  : flex;
+            flex-wrap: wrap;
+            gap      : 2rem;
+
+            .box {
+                flex            : 1 1 20rem;
+                padding         : 3rem 4rem;
+                border-radius   : .5rem;
+                background-color: var(--lightBg);
+                box-shadow      : var(--boxShadow);
+
+                h3 {
+                    @include fontStyle(5rem, var(--theme));
+                }
+
+                p {
+                    @include fontStyle(2rem, var(--lightColor));
+                    // padding-top: 1rem;
+                }
+            }
+        }
+    }
+
+}

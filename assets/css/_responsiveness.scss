@@ -1,0 +1,131 @@
+@media (min-width: 1200px) {
+
+    .about .row .count-container .box {
+        flex: 1 1 30rem;
+    }
+
+    .portfolio .box-container {
+        @include grid(40rem);
+    }
+
+    .blogs .box-container {
+        @include grid(40rem);
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .heading {
+        font-size: 12vw;
+    }
+
+    .header .navbar {
+
+        a {
+            &:hover {
+                // padding-bottom: 3rem;
+            }
+
+            i {
+                padding: 0;
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .home {
+        text-align    : center;
+        // padding-top: 3rem;
+        gap           : 2rem;
+
+        .image img {
+            height: 35rem;
+            width : 35rem;
+        }
+
+        .content {
+            h3 {
+                font-size  : 4rem;
+                font-weight: 400;
+            }
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            p {
+                font-size     : 2rem;
+                // padding    : .5rem 0;
+                line-height   : 1.8;
+            }
+        }
+    }
+
+    .contact .row form {
+        .inputBox input {
+            width        : 100%;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            align-self   : auto;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 53%;
+    }
+
+    .home {
+        // gap          : 2rem;
+        align-content: start;
+
+        .image {
+            margin-top: 1.5rem;
+        }
+
+        .content {
+
+            .name {
+                display: block;
+            }
+
+            h3 {
+                padding-bottom: 0;
+            }
+
+            h1 {
+                padding: .2rem 0;
+            }
+
+            p {
+                padding-bottom: 1rem;
+                line-height   : 1.5;
+            }
+        }
+    }
+
+    .about .info-container {
+        margin-bottom: 3rem;
+    }
+
+    .education .box-container .box {
+        padding-bottom: 5.5rem;
+    }
+}
