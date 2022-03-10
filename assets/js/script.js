@@ -70,7 +70,7 @@ blogLoadMoreBtn.addEventListener('click', () => {
 // JavaScript Typing Animation
 let typed = new Typed('#inputFromJS', {
 
-    strings: ['SEO Developer ', 'Digital Marketer'],
+    strings: ['Developer ', 'Ethical Hacking','Social Media','Security Analist','DBA','Designer'],
     typeSpeed: 100,
     backSpeed: 50,
     loop: true
