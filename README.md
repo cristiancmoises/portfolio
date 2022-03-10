@@ -1,2 +1,0 @@
-# cristiancezarmoises.github.io
-Portfolio
