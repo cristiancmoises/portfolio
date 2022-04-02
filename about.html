@@ -12,8 +12,30 @@
 	<link  href="css/bootstrap.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">	
 </head>
-
-<body>
+<script language='JavaScript'>
+//Bloqueador de Selecao - iceBreaker http://www.icebreaker.com.br/
+function bloquear(e){return false}
+function desbloquear(){return true}
+document.onselectstart=new Function (&quot;return false&quot;)
+if (window.sidebar){document.onmousedown=bloquear
+document.onclick=desbloquear}
+</script>
+<script language='JavaScript'>
+//Bloqueador de Tecla CTRL - iceBreaker http://www.icebreaker.com.br/
+function checartecla (evt)
+{if (evt.keyCode == &#39;17&#39;)
+{alert(&quot;Comando Desativado&quot;)
+return false}
+return true}
+</script>
+<script language='JavaScript'>
+//Bloqueador de Botão Direito - iceBreaker http://www.icebreaker.com.br/
+function clique() {if (event.button==2||event.button==3) {oncontextmenu=&#39;return false&#39;;}}
+document.onmousedown=clique
+document.oncontextmenu = new Function(&quot;return false;&quot;)
+</script>
+</head>
+<body  onselectstart='return false' onkeydown='return checartecla(event)' ondragstart='return false' oncontextmenu='return false' >
 <!-- NavBar-->
 <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
   <a class="navbar-brand px-md-5">
