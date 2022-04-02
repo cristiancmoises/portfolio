@@ -67,23 +67,6 @@ document.oncontextmenu = new Function(&quot;return false;&quot;)
     </ul>
   </div>
 </nav>
-<!--music-->
-<audio controls id="music">
-<source src="https://ftp.openbsd.org/pub/OpenBSD/songs/song68.ogg" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-<p>Click the buttons to play or pause the music.</p>
-<button onclick="play()" type="button">Play </button>
-<button onclick="pause()" type="button">Pause</button>
-<script>
-var myMusic= document.getElementById("music");
-function play() {
-myMusic.play();
-}
-function pause() {
-myMusic.pause();
-}
-</script>
 <!-- Banner-->
 <div class="jumbotron jumbotron-fluid" style="background: url() no-repeat fixed ; background-size: contain;">
   <div class="container">
@@ -157,28 +140,93 @@ myMusic.pause();
     <span class="" style="color:#9fd115">Resume</span><font style="color:#ffffff">(<span class="font-italic" style="color:#e68a00"></span>):</font>         
   </h2>
   </div>
-  <div class="row featurette">
-      <div class="col-md-7">
-        <p class="lead">
-          
-        </p>
-        <table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table> 
+<!-- Agenda -->
+<div class="container" id="agenda">
+
+	<div class="my-5" align="left">
+    <h2 class="featurette-heading"><span class="font-italic">SecOps</span>
+      	<span class="" style="color:#9fd115"> _Videos</span>
+      	<font style="color:#ffffff">(<span class="font-italic" style="color:#e68a00">agenda</span>):</font>
+    </h2>
+	</div>
+
+
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true">30/03/2022</a>
+    <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false">04/2022</a>
+    <!--
+    <a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false">Tarde</a>
+    <a class="nav-item nav-link" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false">Encerramento</a>
+	-->
+  </div>
+</nav>
+
+<div class="tab-content" id="nav-tabContent">
+	<div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+		<table class="table table-striped table-dark">
+			<tbody align="left">
+    			<tr>
+   		      <td>Windows Sem Tpm - Autoinstalável! Confira:</td>
+      			<td>Cristian Cezar Moises</td>
+      			<td>16:48</td>
+						<td>YT</td>
+      			<td><a href="https://www.youtube.com/watch?v=byBAkdH73B8" target="blank">Watch</a></td>
+    			</tr>
+      			<td>Safe Browser</td>
+      			<td>Cristian Cezar Moises</td>
+      			<td>DUCKDUCKGO</td>
+						<td>Link</td>
+      			<td><a href="https://duckduckgo.com" target="blank">Browser</a></td>
+    			</tr>
+			</tbody>
+		</table>
+	</div>
+  	<div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+  		<table class="table table-striped table-dark">
+			<tbody>
+				<tr>
+      			<td>Comming</td>
+      			<td>?Cristian Cezar Moises</td>
+      			<td>12:00</td>
+						<td>YouTube</td>
+      			<td><a href="https://github.com/cristiancmoises" target="blank">Watch</a></td>
+    			</tr>
+		
+			</tbody>
+		</table>
+  	</div>
+  	<div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+		<table class="table table-striped table-dark">
+			<tbody>
+    			<tr>
+      			<td>TBD</td>
+      			<td>TBD</td>
+      			<td>TBD</td>
+      			<td>TBD</td>
+    			</tr>
+					<tr>
+      			<td>TBD</td>
+      			<td>TBD</td>
+      			<td>TBD</td>
+      			<td>TBD</td>
+    			</tr>
+					<tr>
+      			<td>TBD</td>
+      			<td>TBD</td>
+      			<td>TBD</td>
+      			<td>TBD</td>
+    			</tr>
+					<tr>
+      			<td>TBD</td>
+      			<td>TBD</td>
+      			<td>TBD</td>
+      			<td>TBD</td>
+    			</tr>
+			</tbody>
+		</table>
+  	</div>
         <p><a class="btn btn-secondary" href="https://github.com/cristiancmoises/securityops" target="blank" role="button">Github &raquo;</a></p>
       </div>
       <div class="col-md-5">
