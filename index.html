@@ -33,16 +33,17 @@ function clique() {if (event.button==2||event.button==3) {oncontextmenu=&#39;ret
 document.onmousedown=clique
 document.oncontextmenu = new Function(&quot;return false;&quot;)
 </script>
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</head>
+<body  onselectstart='return false' onkeydown='return checartecla(event)' ondragstart='return false' oncontextmenu='return false' >
+	
+	<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>
   function addDarkmodeWidget() {
     new Darkmode().showWidget();
   }
   window.addEventListener('load', addDarkmodeWidget);
 </script>
-</head>
-
-<body  onselectstart='return false' onkeydown='return checartecla(event)' ondragstart='return false' oncontextmenu='return false' >
+	
 <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), 
 	auto !important;}</style><a href="" 
 target="_blank" title="SecOps"><img src="https://cur.cursors-4u.net/cursor.png" border="0" 
