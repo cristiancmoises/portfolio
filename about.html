@@ -36,11 +36,22 @@ document.oncontextmenu = new Function(&quot;return false;&quot;)
 </script>
 </head>
 <body  onselectstart='return false' onkeydown='return checartecla(event)' ondragstart='return false' oncontextmenu='return false' >
-<audio controls autoplay>
-  <source src="https://ftp.openbsd.org/pub/OpenBSD/songs/song68.ogg" type="audio/ogg">
-  <source src="https://ftp.openbsd.org/pub/OpenBSD/songs/song68.mp3" type="audio/mpeg">
+<audio controls id="music">
+<source src="https://ftp.openbsd.org/pub/OpenBSD/songs/song68.ogg" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
+<p>Click the buttons to play or pause the music.</p>
+<button onclick="play()" type="button">Play </button>
+<button onclick="pause()" type="button">Pause</button>
+<script>
+var myMusic= document.getElementById("music");
+function play() {
+myMusic.play();
+}
+function pause() {
+myMusic.pause();
+}
+</script>
 	<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), 
 	auto !important;}</style><a href=""target="_blank" title="SecOps"><img src="https://cur.cursors-4u.net/cursor.png" border="0" 
 	alt="SecOps" style="position:absolute; top: 0px; right: 0px;" /></a>
