@@ -15,5 +15,5 @@
     ✨ react-reveal 
     ✨ styled-components 
 
-  #### Live Site: https://timsportfolio.dev/
+  #### Live Site: https://cristiancezarmoises.vercel.app
 
